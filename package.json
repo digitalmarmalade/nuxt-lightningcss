@@ -1,65 +1,65 @@
 {
-  "name": "nuxt-lightningcss",
-  "version": "2.3.0",
-  "description": "Lightningcss for Nuxt",
-  "repository": "https://github.com/juliendargelos/nuxt-lightningcss",
-  "keywords": [
-    "lightningcss",
-    "nuxt",
-    "css",
-    "postcss",
-    "vue"
-  ],
-  "license": "MIT",
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
-    }
-  },
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
-  "files": [
-    "dist"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "scripts": {
-    "prepack": "nuxt-module-build",
-    "dev": "nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "release": "pnpm lint && pnpm test && pnpm prepack && changelogen --release && pnpm publish && git push --follow-tags",
-    "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest watch"
-  },
-  "dependencies": {
-    "@nuxt/kit": "^3.17.5",
-    "@vue/compiler-sfc": "^3.5.16",
-    "browserslist": "^4.25.0",
-    "jiti": "^2.4.2",
-    "lightningcss": "^1.30.1",
-    "magic-string": "^0.30.17"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "^0.8.5",
-    "@nuxt/eslint-config": "^0.1.1",
-    "@nuxt/module-builder": "^0.4.0",
-    "@nuxt/schema": "^3.17.5",
-    "@nuxt/test-utils": "^3.19.1",
-    "@types/node": "^18.19.112",
-    "changelogen": "^0.5.7",
-    "eslint": "^8.57.1",
-    "nuxt": "^3.17.5",
-    "vitest": "^0.34.6"
-  },
-  "peerDependencies": {
-    "nuxt": "^3.17.5"
-  },
-  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
+	"name": "nuxt-lightningcss",
+	"version": "2.3.0",
+	"description": "Lightningcss for Nuxt",
+	"repository": "https://github.com/juliendargelos/nuxt-lightningcss",
+	"keywords": [
+		"lightningcss",
+		"nuxt",
+		"css",
+		"postcss",
+		"vue"
+	],
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/types.d.ts",
+			"import": "./dist/module.mjs",
+			"require": "./dist/module.cjs"
+		}
+	},
+	"main": "./dist/module.cjs",
+	"types": "./dist/types.d.ts",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"scripts": {
+		"prepack": "nuxt-module-build",
+		"dev": "nuxi dev playground",
+		"dev:build": "nuxi build playground",
+		"dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+		"release": "pnpm lint && pnpm test && pnpm prepack && changelogen --release && pnpm publish && git push --follow-tags",
+		"lint": "eslint .",
+		"test": "vitest run",
+		"test:watch": "vitest watch"
+	},
+	"dependencies": {
+		"@nuxt/kit": "^3.17.5",
+		"@vue/compiler-sfc": "^3.5.16",
+		"browserslist": "^4.25.0",
+		"jiti": "^2.4.2",
+		"lightningcss": "^1.30.1",
+		"magic-string": "^0.30.17"
+	},
+	"devDependencies": {
+		"@nuxt/devtools": "^0.8.5",
+		"@nuxt/eslint-config": "^0.1.1",
+		"@nuxt/module-builder": "^0.4.0",
+		"@nuxt/schema": "^3.17.5",
+		"@nuxt/test-utils": "^3.19.1",
+		"@types/node": "^18.19.112",
+		"changelogen": "^0.5.7",
+		"eslint": "^8.57.1",
+		"nuxt": "^3.17.5",
+		"vitest": "^0.34.6"
+	},
+	"peerDependencies": {
+		"nuxt": "^3.17.5 || ^4.0.0"
+	},
+	"packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }
